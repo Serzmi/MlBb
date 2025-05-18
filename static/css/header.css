@@ -1,19 +1,5 @@
+/* По умолчанию - тёмная тема */
 :root {
-    --bg-primary: #f5f5f5;
-    --bg-secondary: #ffffff;
-    --text-primary: #333333;
-    --text-secondary: #555555;
-    --accent-1: #ff4d4d;
-    --accent-2: #f9cb28;
-    --accent-3: #F9C75F;
-    --nav-bg: rgba(255, 255, 255, 0.5);
-    --shadow-color: rgba(0, 0, 0, 0.1);
-    --hero-card-bg: rgb(215 215 215);
-    --hero-card-text: #333333;
-    --hero-card-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-[data-theme="dark"] {
     --bg-primary: #1a1a2e;
     --bg-secondary: #16213e;
     --text-primary: #ffffff;
@@ -26,6 +12,22 @@
     --hero-card-bg: rgba(30, 30, 60, 0.8);
     --hero-card-text: #ffffff;
     --hero-card-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* Светлая тема при data-theme="light" */
+[data-theme="light"] {
+    --bg-primary: #f5f5f5;
+    --bg-secondary: #ffffff;
+    --text-primary: #333333;
+    --text-secondary: #555555;
+    --accent-1: #ff4d4d;
+    --accent-2: #f9cb28;
+    --accent-3: #F9C75F;
+    --nav-bg: rgba(255, 255, 255, 0.5);
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --hero-card-bg: rgb(215 215 215);
+    --hero-card-text: #333333;
+    --hero-card-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 * {
