@@ -1,0 +1,12 @@
+{% extends "/header/header.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main_page.css') }}">
+
+
+<div class="content-container">
+    <h1>Главная страница</h1>
+</div>
+
+<script src="{{ url_for('static', filename='js/main_page.js') }}"></script>
+{% endblock %}

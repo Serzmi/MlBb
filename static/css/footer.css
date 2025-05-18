@@ -1,0 +1,23 @@
+.site-footer {
+    background: var(--nav-bg);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    box-shadow: 0 4px 30px var(--shadow-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    top: 100%;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}

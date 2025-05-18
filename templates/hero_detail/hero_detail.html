@@ -1,0 +1,10 @@
+{% extends "/header/header.html" %}
+
+{% block content %}
+<div class="content-container">
+    <h1>Детали героя: {{ hero.name }}</h1>
+    <p>ID героя: {{ hero.id}}</p>
+</div>
+
+{% include "/footer/footer.html" %}
+{% endblock %}

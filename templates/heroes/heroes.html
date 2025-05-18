@@ -1,0 +1,20 @@
+{% extends "/header/header.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/heroes.css') }}">
+
+<div class="content-container">
+    <h1>Герои</h1>
+    <div class="heroes-grid">
+        {% for id, name in heroes.items() %}
+        <a href="{{ url_for('hero_detail', hero_id=id) }}" class="hero-card">
+            <img src="{{ url_for('static', filename='foto_hero/' + id + '.webp') }}" alt="{{ name }}">
+            <h3>{{ name }}</h3>
+        </a>
+        {% endfor %}
+    </div>
+</div>
+
+{% include "/footer/footer.html" %}
+<script src="{{ url_for('static', filename='js/heroes.js') }}"></script>
+{% endblock %}
